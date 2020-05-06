@@ -13,11 +13,12 @@
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:id="@+id/text_view_bonjour"
-            android:text="@string/titre"
-            android:layout_centerHorizontal="true"
-            android:textSize="@dimen/size_text"
-            android:textColor="@color/color_bleuTitre"/>
 
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/size_text_medium"
+            android:textColor="@color/color_bleuTitre"/>
+            <!-- android:text="@string/titre" -->
+    <!-- annulation du text view prénom
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="50dp"
@@ -28,6 +29,7 @@
         android:textSize="@dimen/size_text"
         android:paddingLeft="5dp"
         android:textColor="@color/color_bleuTitre"/>
+     -->
 
 
     <LinearLayout
@@ -36,12 +38,13 @@
         android:layout_margin="10dp"
         android:id="@+id/linearLayout_filmsPref"
         android:layout_below="@+id/text_view_bonjour"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        >
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Films préférés"
+            android:text="@string/film_prefer"
             android:textSize="22dp"
             android:textColor="#76BFF9"
             />
@@ -53,7 +56,8 @@
         android:layout_height="130dp"
         android:layout_below="@+id/linearLayout_filmsPref"
         android:id="@+id/linearLayout_topGun"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:onClick="onClickLinearLayout">
 
         <ImageView
             android:layout_width="120dp"
@@ -70,12 +74,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:textSize="22dp"
-                android:text="TOP GUN"
+                android:text="@string/film1"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="17 septembre 1986"
+                android:text="@string/date1"
                 />
         </LinearLayout>
     </LinearLayout>
@@ -85,7 +89,8 @@
         android:layout_height="130dp"
         android:layout_below="@+id/linearLayout_topGun"
         android:id="@+id/linearLayout_avatar"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:onClick="onClickLinearLayout">
 
         <ImageView
             android:layout_width="120dp"
@@ -102,12 +107,12 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:textSize="22dp"
-                android:text="AVATAR"
+                android:text="@string/film2"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="16 décembre 2009"
+                android:text="@string/date2"
                 />
         </LinearLayout>
     </LinearLayout>
@@ -117,7 +122,8 @@
         android:layout_height="130dp"
         android:layout_below="@+id/linearLayout_avatar"
         android:id="@+id/linearLayout_intouchable"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:onClick="onClickLinearLayout">
 
         <ImageView
             android:layout_width="120dp"
@@ -134,19 +140,19 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
                 android:textSize="22dp"
-                android:text="INTOUCHABLES"
+                android:text="@string/film3"
                 />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="02 novembre 2011"
+                android:text="@string/date3"
                 />
         </LinearLayout>
     </LinearLayout>
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingLeft="16dp"
@@ -155,7 +161,7 @@
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
-        android:text="RECHERCHER"
+        android:text= "@string/button"
         />
 
 

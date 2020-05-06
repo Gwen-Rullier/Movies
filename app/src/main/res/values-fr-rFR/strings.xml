@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string name="app_name">mon app MOVIES</string>
+    <string name="titre">Bonjour petite Gwen</string>
+    <string name="prenom">Gwen</string>
+    <string name="button">Rechercher</string>
+    <string name="film_prefer">Films préférés</string>
+    <string name="film3">Intouchables</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="date1">17 septembre 1986</string>
+    <string name="date2">"16 décembre 2009 "</string>
+    <string name="date3">02 novembre 2011</string>
+    <string name="genre1">Action</string>
+    <string name="award">Récompense</string>
+    <string name="actor">Acteurs</string>
+    <string name="director">Réalisateur</string>
+    <string name="suit">Lire la suite</string>
+    <string name="propos">A propos du film</string>
+    <string name="genre3">histoire vraie</string>
 
 </resources>
